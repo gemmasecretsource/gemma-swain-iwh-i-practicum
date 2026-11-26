@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        a(href="/update-cobj") Add to this table
+        h1 Beers
+        table
+            tr
+                th Name
+                th Brand
+                th Price
+            each record in records
+                tr
+                    td= record.properties.name
+                    td= record.properties.brand
+                    td= record.properties.price
+                
